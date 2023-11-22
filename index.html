@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+   
     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" href="Images\logo3.ico" type="image/x-icon">
     <!-- Link to CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
+    
+
+
+
+
 
     <!-- Website Title -->
     <title>Anthony Barbaro</title>
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="flexCont" id="frontNav" id="home">
+    <nav class="flexROW" id="frontNav">
         <a href="#" class="logo">
             <!-- Logo -->
             <img src="Images/logo2.png" alt="Anthony Barbaro Logo"> <!-- Alt attribute added for accessibility -->
@@ -21,57 +28,121 @@
         <!-- Navigation Links -->
         <ul>
             <li><a href="#home">HOME</a></li>
-            <li><a href="#about-section">ABOUT</a></li>
+            <li><a href="#about">ABOUT</a></li>
             <li><a href="#projects-section">PROJECTS</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#contact-section">CONTACT</a></li>
         </ul>
     </nav>
     <!-- Parallax Section -->
-    <div class="parallax" id="about-section">
+    <div class="parallax" id="home">
         <img  class="profile-image" src="Images/profile-pic1.png">
         <div class="header-text">
             <!-- Headings -->
             <h1 class="slide">Hi, I'm Anthony Barbaro</h1>
             <p class="slide">Software Developer</p>
         </div>
-        <div class="abouttext">
-            <p class="slide"> 
-                I am a software developer from California. With expertise spanning multiple programming languages and a solid grasp of data structures,
-                I seamlessly integrate my academic knowledge with real-world applications, creating efficient solutions and pushing the boundaries of modern software development.</p>
-        </div>
-        <div id="about">
+       
+        <div class="flexCont">
+            <div class="slide">
+                <div class="flexCont">
 
-        
-            <div class="flexCont">
-                <div class="row">
-                    <div class="col1">
-                        
+                    <h3 class="title1"> Technical Skills and Projects</h3>
+                    <div class="abouttext"> 
+                            
+                        <p>I am proficient in Python, Java, C++, HTML, and CSS, with a robust understanding of data structures. My projects, like the BlackJack game simulator and Personal Data Linked List, showcase my problem-solving abilities and coding skills. Check out my work on <a href="https://github.com/AnthonyB0/GitHUB">GitHub</a>.</p>
+                    
                     </div>
-                    <div class="col2">
-                        <h2 class="title">SKILLS</h2>
+                    <h3 class="title1"> My Mission</h3>
+                    <div class="abouttext">
+                            <p> 
+                                To empower businesses and individuals by providing exceptional freelance services in Web Development, leveraging innovation, creativity, and strategic insight. I am dedicated to delivering tailored solutions that enhance brand presence, engage audiences, and drive success, while upholding integrity, collaboration, and continuous growth in every project</p>
+                    </div>
+                    <h3 class="title1">Why?</h3>
+                    <div class="abouttext">
+                            <p>Offering custom-made strategies and designs that precisely meet the unique needs of each client.
+                            Ensuring a one-on-one engagement with each client, fostering better understanding and collaboration.
+                            Committing to high-quality outputs delivered within agreed timelines, respecting the urgency and importance of each project.<br>
+                            Placing client satisfaction at the forefront, with flexible and responsive communication and adjustments as per client feedback.</p>
                     </div>
                 </div>
-
             </div>
+            
+            <div class="slide" id="about">
+                <h1 class="title">SKILLS</h1>
+                <div class="skills-container">
+                    <div class="skill">
+                        <label class="title1">HTML:</label>
+                        <div class="progress-bar" data-percent="85"><div class="filled"></div></div>
+                        
+                    </div>
+                    <div class="skill">
+                        <label class="title1">CSS:</label>
+                        <div class="progress-bar" data-percent="60"><div class="filled"></div></div>
+                        
+                    </div>
+                    <div class="skill">
+                        <label class="title1">JavaScript:</label>
+                        <div class="progress-bar" data-percent="25"><div class="filled"></div></div>
+                        
+                    </div>
+                    <div class="skill">
+                        <label class="title1">Python:</label>
+                        <div class="progress-bar" data-percent="85"><div class="filled"></div></div>
+                        
+                    </div>
+                    <div class="skill">
+                        <label class="title1">Java:</label>
+                        <div class="progress-bar" data-percent="70"><div class="filled"></div></div>
+                    </div>
+                    <div class="skill">
+                        <label class="title1">C++:</label>
+                        <div class="progress-bar" data-percent="70"><div class="filled"></div></div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+
+
         </div>
     </div>
-    
-    <div class="parallax">
-        
-    </div>
+         
     <div class="parallax" id="projects-section">
         <div class="flexCont">
             <h1 class="title"> PROJECTS</h1>
+            <h1 class="title"> Coming SOON</h1>
         </div>
     </div>
 
-    <div class="parallax">
+    
+    <div class="parallax" id="contact-section">
+        <div class="slide"></div>
+            <div class="flexCont">
+                <h1 class="title"> CONTACT</h1>
+                <div class="container">
+                    <form action="https://formsubmit.co/b4a166bd830ce39f0a8e339dd95396fd" method="POST" />
+                        <h3>GET IN TOUCH</h3>
+                        <input type="text" id="name" placeholder="Full Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="text" id="phone" placeholder="Phone Number" required>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://https://127.0.0.1:5500/Personal%20Website/">
+                        <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+                        <button type="submit">Send Message</button>
 
+                    </form>
+
+                </div>
+            </div>
+        </div>
     </div>
+   
+   
 
     <!-- JavaScript Link -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="index.js"></script>
-
+   
     <!-- Footer -->
     <footer>
         <!-- Footer Text -->
