@@ -59,6 +59,7 @@ body {
 }
 
 #frontNav ul li::after {
+    
     content: '';
     width: 0%;
     height: 2px;
@@ -73,9 +74,9 @@ body {
 }
 
 #frontNav li a {
-    position: center;
+    
+    position: static;
     margin: 10px;
-    align-items: last baseline;
     font-size: larger;
     display: block;
     text-align: center;
@@ -273,6 +274,7 @@ body {
     width: 100%;
     padding: 20px;
     margin: 0px;
+    right: auto;
    
 }
 .skill {
@@ -389,47 +391,21 @@ footer {
 }
 
 /* Tablet (From 768px to 1024px) */
-@media screen and (min-width: 768px) {
-    .logo {
-        transform: scale(0.6); /* Slightly larger for tablets */
+@media screen and (max-width: 768px) {
+    #frontNav {
+        display: none;
     }
-    .header-text {
-        font-size: 24px; /* Adjust font size for readability */
+    .skills-container {
+       position: static;
+        
     }
-    .abouttext, .Stext {
-        padding: 50px; /* More padding */
-        font-size: 18px; /* Larger font size */
-        left: 0;
+    .abouttext{
+        padding: 15px 20px;
+       
     }
-    .progress-bar {
-        width: 200px; /* Larger progress bars */
-    }
-    .container {
-        width: 80%; /* Adjust container width */
-        padding: 80px;
-    }
+    
 }
 
 /* Desktop (Larger than 1024px) */
 @media screen and (min-width: 1024px) {
-    .logo {
-        transform: scale(0.8); /* Larger logo for desktop */
-    }
-    .header-text {
-        font-size: 28px; /* Larger font size for desktop */
-    }
-    .abouttext, .Stext {
-        padding: 100px; /* More padding */
-        font-size: 28px; /* Larger font size */
-    }
-    .progress-bar {
-        width: 800px; /* Even larger progress bars */
-    }
-    .container {
-        width: 100%; /* Adjust container width */
-        padding: 100px;
-    }
-    .flexROW {
-        justify-content: space-around; /* Adjust spacing for flex items */
-    }
 }

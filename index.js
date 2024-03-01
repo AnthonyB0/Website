@@ -33,8 +33,9 @@ function sendEmail(){
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "anthony@barbaro.tech",
-        Password : "D6250E6084434E4E581569E5756B41A630EF",
-        To : 'anthony40@gmail.com',
+        Password : "8C6326BB7A0309C12D1FC294DB5FEEFD2CA9",
+        SecureToken : "8fc2bb77-b410-4a99-8d72-5adce39450e0",
+        To : 'anthonybarbaro40@gmail.com',
         From : document.getElementById("email").value,
         Subject : "New Contact Form Enquiry",
         Body : "Name: " + document.getElementById("name").value + "<br> Email: " + document.getElementById("email").value
@@ -44,3 +45,6 @@ function sendEmail(){
       message => alert("Message Sent Succesfully")
     );
 }
+document.querySelector('.menu-icon').addEventListener('click', function() {
+    document.getElementById('mobileNav').classList.toggle('active');
+});
